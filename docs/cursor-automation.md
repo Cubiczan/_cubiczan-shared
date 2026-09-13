@@ -4,7 +4,7 @@ Dashboard: [SEC LEADS FILING AGENT](https://cursor.com/automations/0980e453-a3b6
 
 ## Required settings
 
-- **Repo-backed.** The ledger has to persist. Point the automation at this repo (or a dedicated successor) so `AGENTS.md` and `ledger/sends.jsonl` are on disk.
+- **Repo-backed.** The ledger has to persist. Point the automation at **Cubiczan/_cubiczan-shared** (this repo) so `AGENTS.md` and `ledger/sends.jsonl` are on disk. `icohangar-ops/_cubiczan-shared` is archived/read-only — a push there 403s.
 - **Prompt:** Follow `AGENTS.md` — screen, verify filings directly, write the digest, send via Customer.io, append the ledger only after `SENT — delivery_id …`.
 - **Two crons:**
   - 07:00 ET (`0 11 * * *` UTC while EDT)
